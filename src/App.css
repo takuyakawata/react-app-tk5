@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* CSS */
+.seating-plan {
+  display: flex;
+  flex-direction: column;
+  /* 縦列に配置 */
+}
+
+.row {
+  display: flex;
+}
+
+.seat {
+  width: 60px;
+  /* 席の幅を2倍に拡大 */
+  height: 60px;
+  /* 席の高さを2倍に拡大 */
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(61, 93, 189);
+  background: linear-gradient(126deg,
+      rgba(61, 93, 189, 1) 0%,
+      rgba(33, 63, 107, 1) 96%);
+  height: 100vh;
+  color: #e4e4e4;
+  line-height: 1.5;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.trello {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trello-section {
+  width: 400px;
+  /* border: 1px solid white; */
+  background: rgb(30, 25, 31);
+  background: linear-gradient(126deg,
+      rgba(30, 25, 31, 1) 0%,
+      rgba(51, 45, 54, 1) 96%);
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.trello-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
