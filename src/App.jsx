@@ -6,16 +6,16 @@
 
 import './App.css'
 import {BrowserRouter, Routes, Route, Link } from "react-router-dom";
-// import { ActionButton } from "./components/ActionButton";
 import { Seats } from "./pages/Seats";
 import { Trello } from "./pages/Trello";
+import { Training } from "./pages/Training";
 
 const App = () => {
 
   return (
     <>
       <BrowserRouter>
-        <h1>react app 席替え</h1>
+        <h1>react app tk5</h1>
         <ul>
           <li>
             <Link to="/seats">席替え</Link>
@@ -23,12 +23,16 @@ const App = () => {
           <li>
             <Link to="/trello">メモ</Link>
           </li>
+          <li>
+            <Link to="/training">練習</Link>
+          </li>
         </ul>
 
 
         <Routes>
           <Route path="/seats" element={<Seats />} />
           <Route path="/trello" element={<Trello />} />
+          <Route path="/training" element={<Training />} />
         </Routes>
 
       </BrowserRouter>
